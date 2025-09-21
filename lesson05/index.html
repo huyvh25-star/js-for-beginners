@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const createCounter = () => {
+            let count = 0;
+            function increes() {
+                return count++;
+            }
+            return increes;
+        }
+        const couter1 = createCounter();
+        console.log(couter1());
+        console.log(couter1());
+        console.log(couter1());
+
+    </script>
+</body>
+
+</html>
